@@ -5,42 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/general.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./css/contato.css" media="screen" />
     <title>Meus contatos</title>
 </head>
 
 <body>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contato.html">Contato</a></li>
-    </ul>
+    <header class="">
+        <nav class="header-nav">
+            <a href="index.html">Home</a>
+            <a href="">Sobre mim</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
 
-    <h2>Entre em contato comigo</h2>
+    <main class="main">
+        <section class="main-contact">
+            <figure class="image">
+                <img src="./assets/my_photo.jpeg" alt="">
+            </figure>
 
-    <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="assunto">Assunto:</label>
-        <br>
-        <br>
-        <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
+            <div class="main-form">
+            <h2>Entre em contato comigo</h2>
+            <form>
+                
+                   <div class="input-field">
+                    <input id="nome" placeholder="Nome" type="text">
+                    <div class="underline"></div>
+                   </div>
+                    
+                   <div class="input-field">
+                    <input id="email" placeholder="Email" type="email">
+                    <div class="underline"></div>
+                   </div>
+                    
+                    <div class="textarea">
+                        <textarea id="mensagem" placeholder="Mensagem" name="mensagem" cols="'30" rows="1"></textarea>
+                        <div class="underline"></div>
+                    </div>
+                    
+                    
+                    <input type="submit" value="Enviar">
+               
+                
+            </form>
 
-    <h2>Endereço</h2>
-    <p>Rua Seringal do Rio Verde, 1001</p>
-    <p>São Paulo - SP</p>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.2940654550816!2d-46.775083385539325!3d-23.701190572654735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5271e3b6891f%3A0xa8c72d67b1fb9822!2sR.%20Seringal%20do%20Rio%20Verde%2C%201001%20-%20Parque%20Bologne%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004941-020!5e0!3m2!1spt-BR!2sbr!4v1650304383221!5m2!1spt-BR!2sbr"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div>
+                <h2>sdladnljndljNDJ</h2>
+            </div>
+        </div>
+        </section>
+
+        <section class="main-map">
+            <h2>Endereço</h2>
+            <p>Rua Seringal do Rio Verde, 1001</p>
+            <p>São Paulo - SP</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.2940654550816!2d-46.775083385539325!3d-23.701190572654735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5271e3b6891f%3A0xa8c72d67b1fb9822!2sR.%20Seringal%20do%20Rio%20Verde%2C%201001%20-%20Parque%20Bologne%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004941-020!5e0!3m2!1spt-BR!2sbr!4v1650304383221!5m2!1spt-BR!2sbr"
+                width="1078" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>    
 </body>
 
 </html>
