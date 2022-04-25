@@ -1,3 +1,4 @@
+
 let nome = document.querySelector('#nome');
 let email = document.querySelector('#email');
 let mensagem = document.querySelector('#mensagem');
@@ -65,4 +66,5 @@ function normalMap() {
     mapa.style.width = '1078px';
     mapa.style.height = '300px';
 }
+
 
