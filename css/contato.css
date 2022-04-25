@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,800&display=swap');
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-contact {
+    display: flex;
+    flex-direction: row;
+    margin-top: 6rem;
+}
+
+.image {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 24rem;
+    height: 32rem;
+}
+
+.main-form {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-form form {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    padding: 1.4rem;
+    margin-top: 2.2rem;
+    width: 42rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.main-form h2 {
+    font-size: 3.2rem;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-field input {
+    outline: none;
+    border: 0;
+    font-family: "Karla", sans-serif;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.textarea textarea{
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    font-family: "Karla", serif;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.textarea textarea::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.input-field .underline {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.5);
+}
+
+.textarea .underline {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.5);
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: .4rem;
+    background: black;
+    cursor: pointer;
+    color: white;
+    font-family: "Karla", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    border: none;
+    border-radius: .2rem;
+    width: 6rem;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+}
+
+.main-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-map h2 {
+    margin-top: 2rem;
+}
+
+.main-map iframe {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
