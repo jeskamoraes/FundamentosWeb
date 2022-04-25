@@ -8,43 +8,44 @@ let mensagemOk = false;
 let mapa = document.querySelector('#mapa');
 
 function validarNome() {
-    let txt = document.querySelector('#txtNome');
+    let txtNome = document.querySelector('.txtNome');
     if(nome.value.length < 3) {
-       txt.innerHTML = 'Nome inválido';
-       txt.style.color = 'red';
+       txtNome.innerHTML = 'Nome inválido';
+       txtNome.style.color = 'red';
     }
     else {
-        txt.innerHTML = 'Nome válido';
-        txt.style.color = 'blue';
+        txtNome.innerHTML = 'Nome válido';
+        txtNome.style.color = 'blue';
         nomeOk = true;
     }
 }
 
 function validarEmail() {
-    let txtEmail = document.querySelector('#txtEmail')
+    let txtEmail = document.querySelector('.txtEmail')
     // IndexOf --> 1 retorna true(existe) | -1 retorna false(não existe)
     if(email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1) { // Verifica se não tem o @
         txtEmail.innerHTML = 'Email inválido';
         txtEmail.style.color = 'red';
     }
     else {
-        txt.innerHTML = 'Email válido';
+        txtEmail.innerHTML = 'Email válido';
         txtEmail.style.color = 'blue';
         emailOk = true;
     }
 }
 
-function validarAssunto() {
-    let txtMensagem = document.querySelector('#txtMensagem');
+function validarMensagem() {
+    let txtMensagem = document.querySelector('.txtMensagem');
 
-    if(txtAssunto.value.length >= 100) {
+    if(mensagem.value.length >= 10) {
         txtMensagem.innerHTML = 'Texto muito grande, digite no máximo 100 caracteres';
         txtMensagem.style.color = 'red';
-        txtMensagem.style.display = 'block';
+        //txtMensagem.style.display = 'block';
     }
     else {
         txtMensagem.innerHTML = 'Texto válido';
-        txtMensagem.style.display = 'none';
+        txtMensagem.style.color = 'blue';
+        //txtMensagem.style.display = 'none';
         mensagemOk = true;
     }
 }
@@ -52,8 +53,10 @@ function validarAssunto() {
 function enviar() {
     if(nomeOk == true && emailOk == true && mensagemOk == true){
         alert("Formulário enviado com sucesso!")
+        return true
     }else {
         alert("Olá " + nome.value + "! Preencha o formulário corretamente antes de enviar.")
+        return false
     }
 }
 
