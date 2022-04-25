@@ -29,18 +29,25 @@
             <h2>Entre em contato comigo</h2>
             <form>
                    <div class="input-field">
-                    <input id="nome" placeholder="Nome" type="text">
+
+                    <input id="nome" placeholder="Nome" type="text" onkeyup="validarNome()">
                     <div class="underline"></div>
+                    <div class="txtNome"></div>
                    </div>
                     
                    <div class="input-field">
-                    <input id="email" placeholder="Email" type="email">
+                    <input id="email" placeholder="Email" type="email" onkeyup="validarEmail()">
                     <div class="underline"></div>
+                    <div class="txtEmail"></div>
+
                    </div>
                     
                     <div class="textarea">
                         <textarea id="mensagem" placeholder="Mensagem" name="mensagem" cols="'30" rows="1"></textarea>
                         <div class="underline"></div>
+
+                        <div class="txtMensagem"></div>
+
                     </div>
                     
                     <input onclick="enviar()" type="submit" value="Enviar">
@@ -58,7 +65,8 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.2940654550816!2d-46.775083385539325!3d-23.701190572654735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5271e3b6891f%3A0xa8c72d67b1fb9822!2sR.%20Seringal%20do%20Rio%20Verde%2C%201001%20-%20Parque%20Bologne%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004941-020!5e0!3m2!1spt-BR!2sbr!4v1650304383221!5m2!1spt-BR!2sbr"
                 width="1078" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+ id="mapa" onmousemove="zoomMap()" onmouseout="normalMap()"></iframe>
+
         </section>
     </main>    
     <script src="./script/script.js"></script>
