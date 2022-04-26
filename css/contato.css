@@ -20,8 +20,8 @@
 }
 
 .image img {
-    width: 24rem;
-    height: 32rem;
+    width: 46rem;
+    height: 33rem;
 }
 
 .main-form {
@@ -120,3 +120,28 @@ form input[type="submit"]:hover {
     margin-top: 1.5rem;
     margin-bottom: 3rem;
 }
+
+.footer {
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    height: 3rem;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    color: aliceblue;
+    font-size: .8rem;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* .redes i {
+    color: black;
+    width: 100px;
+    height: 100px;
+} */

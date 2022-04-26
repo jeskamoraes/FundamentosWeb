@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/general.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="./css/contato.css" media="screen" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.min.css">
     <title>Meus contatos</title>
 </head>
 
@@ -22,14 +23,13 @@
     <main class="main">
         <section class="main-contact">
             <figure class="image">
-                <img src="./assets/my_photo.jpeg" alt="">
+                <img src="./assets/contact.jpg" alt="">
             </figure>
 
             <div class="main-form">
-            <h2>Entre em contato comigo</h2>
+            <h2>Entre em contato</h2>
             <form>
                    <div class="input-field">
-
                     <input id="nome" placeholder="Nome" type="text" onkeyup="validarNome()">
                     <div class="underline"></div>
                     <div class="txtNome"></div>
@@ -39,20 +39,16 @@
                     <input id="email" placeholder="Email" type="email" onkeyup="validarEmail()">
                     <div class="underline"></div>
                     <div class="txtEmail"></div>
-
                    </div>
                     
                     <div class="textarea">
                         <textarea id="mensagem" placeholder="Mensagem" name="mensagem" cols="'30" rows="1" onkeyup="validarMensagem()"></textarea>
                         <div class="underline"></div>
                         <div class="txtMensagem"></div>
-
                     </div>
                     
                     <input onclick="enviar()" type="submit" value="Enviar">
-
-                    <div class="redes">
-                    </div>                
+                                 
             </form>
         </div>
         </section>
@@ -68,6 +64,14 @@
 
         </section>
     </main>    
+    <footer class="footer">
+        <h3>&copy 2022, Jessica Moraes</h3>
+        <!-- <div class="redes">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>   -->
+    </footer>
     <script src="./script/script.js"></script>
 </body>
 
